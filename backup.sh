@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # update urls-list, etc
-git pull
+git fetch --all
+git reset --hard origin/backups
+git merge master
+
 
   BACKUPDIR=backup
   TMPDIR=.
@@ -58,7 +61,7 @@ git pull
  done
 
  # push new backups
- git push
+#git push
 
  exit 0;
 
