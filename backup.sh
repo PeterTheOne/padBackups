@@ -61,7 +61,7 @@ git merge master
  done
 
  # push new backups
-#git push
+git push
 
  exit 0;
 
